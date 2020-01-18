@@ -13,9 +13,12 @@ public class Account {
 
     private String middleName;
 
+    private Integer internationalTelephoneCode;
+
     private String primaryMobile;
 
     private String primaryEmail;
 
+    private String primaryAddress;
 
 }

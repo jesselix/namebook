@@ -2,6 +2,8 @@ package li.jesse.accountcenter.pojo;
 
 import lombok.Data;
 
+import java.util.Date;
+
 @Data
 public class Account {
 
@@ -24,4 +26,8 @@ public class Account {
     private String primaryAddress;
 
     private String description;
+
+    private Date createTime;
+
+    private Date updateTime;
 }

@@ -13,7 +13,7 @@
     </resultMap>
 
     <sql id="Base_Column_List">
-        account_id, password, given_name
+        account_id, password, given_name, middle_name, surname, international_telephone_code, primary_mobile, primary_email, primary_address, description, create_time, update_time
     </sql>
 
     <select id="selectByAccountId" resultMap="BaseResultMap" parameterType="java.lang.String">

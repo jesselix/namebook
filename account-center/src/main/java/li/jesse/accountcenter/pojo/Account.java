@@ -7,11 +7,13 @@ public class Account {
 
     private String accountId;
 
-    private String surname;
+    private String password;
 
     private String givenName;
 
     private String middleName;
+
+    private String surname;
 
     private Integer internationalTelephoneCode;
 
@@ -21,4 +23,5 @@ public class Account {
 
     private String primaryAddress;
 
+    private String description;
 }

@@ -2,4 +2,27 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="li.jesse.accountcenter.dao.AccountDao">
 
+    <resultMap id="BaseResultMap" type="li.jesse.accountcenter.pojo.Account">
+        <id column="account_id" property="accountId" jdbcType="VARCHAR" />
+        <result column="" property="" jdbcType="" />
+        <result column="" property="" jdbcType="" />
+        <result column="" property="" jdbcType="" />
+        <result column="" property="" jdbcType="" />
+        <result column="" property="" jdbcType="" />
+        <result column="" property="" jdbcType="" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        account_id, password, given_name
+    </sql>
+
+    <select id="selectByAccountId" resultMap="BaseResultMap" parameterType="java.lang.String">
+        select
+            <include refid="Base_Column_List" />
+        from
+            account
+        where
+            account_id = #{accountId, jdbcType=VARCHAR}
+    </select>
+
 </mapper>

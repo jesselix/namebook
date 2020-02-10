@@ -1,0 +1,9 @@
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.31.101:3306/test?serverTimezone=Shanghai&useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: root
+    password:

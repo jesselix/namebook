@@ -1,6 +1,7 @@
 package li.jesse.accountcenter.pojo;
 
 import lombok.Data;
+import org.springframework.stereotype.Component;
 
 import java.util.Date;
 
@@ -17,13 +18,11 @@ public class Account {
 
     private String surname;
 
-    private Integer internationalTelephoneCode;
+    private String intlTelCode;
 
     private String primaryMobile;
 
     private String primaryEmail;
-
-    private String primaryAddress;
 
     private String description;
 

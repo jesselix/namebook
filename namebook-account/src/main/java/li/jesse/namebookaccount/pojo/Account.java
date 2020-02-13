@@ -17,6 +17,10 @@ public class Account {
 
     private String surname;
 
+    private String gender;
+
+    private Date dateOfBirth;
+
     private String intlTelCode;
 
     private String primaryMobile;

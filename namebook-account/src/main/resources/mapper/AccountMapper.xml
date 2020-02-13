@@ -8,6 +8,8 @@
         <result column="given_name"     jdbcType="VARCHAR" />
         <result column="middle_name"    jdbcType="VARCHAR" />
         <result column="surname"        jdbcType="VARCHAR" />
+        <result column="gender"         jdbcType="CHAR" />
+        <result column="date_of_birth"  jdbcType="TIMESTAMP" />
         <result column="intl_tel_code"  jdbcType="CHAR" />
         <result column="primary_mobile" jdbcType="CHAR" />
         <result column="primary_email"  jdbcType="VARCHAR" />
@@ -17,7 +19,7 @@
     </resultMap>
 
     <sql id="Base_Column_List">
-        account_id, password, given_name, middle_name, surname, intl_tel_code, primary_mobile, primary_email, description, create_time, update_time
+        account_id, password, given_name, middle_name, surname, gender, date_of_birth, intl_tel_code, primary_mobile, primary_email, description, create_time, update_time
     </sql>
 
     <!-- ACUD -->

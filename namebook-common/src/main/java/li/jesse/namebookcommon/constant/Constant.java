@@ -1,4 +1,4 @@
-package li.jesse.namebookaccount.common.constant;
+package li.jesse.namebookcommon.constant;
 
 public class Constant {
 

@@ -23,6 +23,7 @@
     </sql>
 
     <!-- ACUD -->
+    <!-- select -->
     <select id="selectByAccountId" resultMap="BaseResultMap" parameterType="java.lang.String">
         select
             <include refid="Base_Column_List" />
@@ -31,5 +32,18 @@
         where
             account_id = #{accountId, jdbcType=CHAR}
     </select>
+
+    <!-- insert -->
+    <insert id="insertAccount" parameterType="li.jesse.namebookaccount.pojo.Account">
+        insert into
+            account (account_id, password, given_name, middle_name, surname, gender, date_of_birth, intl_tel_code, primary_mobile, primary_email, description, create_time, update_time)
+        values (
+            #{account_id, jdbcType=CHAR}, #{password, jdbcType=VARCHAR}, #{given_name, jdbcType=VARCHAR}, #{middle_name,jdbcType=VARCHAR}, #{surname, jdbcType=VARCHAR},
+            #{gender, jdbcType=CHAR}, #{date_of_birth, jdbcType=TIMESTAMP},
+            #{intl_tel_code, jdbcType=CHAR}, #{primary_mobile, jdbcType=CHAR}, #{primary_email, jdbcType=VARCHAR}, #{description, jdbcType=VARCHAR},
+            now(), now())
+    </insert>
+
+
 
 </mapper>

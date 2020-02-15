@@ -1,4 +1,4 @@
-package li.jesse.namebookaccount.common.base;
+package li.jesse.namebookcommon.base;
 
 import java.io.Serializable;
 

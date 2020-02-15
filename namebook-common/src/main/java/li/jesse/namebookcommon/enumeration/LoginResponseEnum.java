@@ -1,4 +1,4 @@
-//package li.jesse.accountcenter.common.enumeration;
+package li.jesse.namebookcommon.enumeration;//package li.jesse.accountcenter.common.enumeration;
 //
 //import li.jesse.volcanocommon.util.EnumUtil;
 //

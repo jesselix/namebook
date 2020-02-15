@@ -7,4 +7,6 @@ import org.apache.ibatis.annotations.Mapper;
 public interface AccountDao {
 
     Account selectByAccountId(String accountId);
+
+    int insertAccount(Account account);
 }

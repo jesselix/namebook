@@ -5,7 +5,7 @@ plugins {
 }
 
 group = 'li.jesse'
-version = '0.0.1-SNAPSHOT'
+version = '0.0.1'
 sourceCompatibility = '11'
 
 configurations {
@@ -33,7 +33,9 @@ dependencies {
     }
     testImplementation 'io.projectreactor:reactor-test'
 
-    compile group: 'li.jesse', name: 'volcano-common', version: '0.0.1'
+    compile 'li.jesse:volcano-common:0.0.1'
+
+
 }
 
 test {

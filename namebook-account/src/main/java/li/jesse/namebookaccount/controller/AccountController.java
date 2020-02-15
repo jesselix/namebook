@@ -1,6 +1,5 @@
 package li.jesse.namebookaccount.controller;
 
-import li.jesse.namebookaccount.common.constant.Constant;
 import li.jesse.namebookaccount.pojo.Account;
 import li.jesse.namebookaccount.service.AccountService;
 import org.springframework.stereotype.Controller;
@@ -16,14 +15,15 @@ public class AccountController {
 
     private AccountService accountService;
 
-    @GetMapping(value = "get_account_info")
+    @GetMapping(value = "get_account")
     @ResponseBody
-    public Account getAccountInfo(HttpSession session) {
-        Account currentAccount = (Account)session.getAttribute(Constant.CURRENT_ACCOUNT);
-        
+    public Account getAccount(HttpSession session) {
+        Account currentAccount = (Account)session.getAttribute("currentAccount");
+
         if (currentAccount == null) {
 
         }
+
         return accountService.getAccountByAccountId(currentAccount.getAccountId());
     }
 }

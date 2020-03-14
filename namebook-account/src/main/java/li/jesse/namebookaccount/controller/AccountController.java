@@ -2,6 +2,8 @@ package li.jesse.namebookaccount.controller;
 
 import li.jesse.namebookaccount.pojo.Account;
 import li.jesse.namebookaccount.service.AccountService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -12,6 +14,8 @@ import javax.servlet.http.HttpSession;
 @Controller
 @RequestMapping("/account/")
 public class AccountController {
+
+    private static final Logger log = LoggerFactory.getLogger(AccountController.class);
 
     private AccountService accountService;
 

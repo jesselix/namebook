@@ -4,7 +4,7 @@ mybatis:
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mariadb://192.168.31.101:3306/serverTimezone=Shanghai&useUnicode=true&characterEncoding=utf8&useSSL=false
+    url: jdbc:mariadb://192.168.31.102:3306/serverTimezone=Shanghai&useUnicode=true&characterEncoding=utf8&useSSL=false
     username: dev
     password: dev123
     hikari:

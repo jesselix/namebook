@@ -34,7 +34,7 @@ public class SwaggerConfig {
                 "Api Documentation",
                 "1.0",
                 "urn:tos",
-                new Contact("", "", ""),
+                new Contact("Jesse", "", "jesselix@live.com"),
                 "Apache 2.0",
                 "http://www.apache.org/licenses/LICENSE-2.0",
                 new ArrayList<VendorExtension>());

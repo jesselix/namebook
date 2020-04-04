@@ -21,6 +21,6 @@ public class AccountDaoTest {
         testAccount.setPrimaryEmail("xiaoming.wang@21cn.com");
         testAccount.setDescription("hi, buddy, my name is Xiaoming");
 
-        System.out.println(accountDao.insertAccount(testAccount));
+//        System.out.println(accountDao.insertAccount(testAccount));
     }
 }

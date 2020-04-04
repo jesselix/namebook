@@ -33,14 +33,16 @@ dependencies {
     }
     testImplementation 'io.projectreactor:reactor-test'
 
-    compile 'li.jesse:volcano-common:0.0.1'
+//    compile 'li.jesse:volcano-common:0.0.1'
+//    compile 'zxx.zyy:u1:1.0'
+    compile group: 'zxx.zyy', name: 'u1', version: '1.0'
+    compile group: 'li.jesse', name: 'volcano-common', version: '0.0.1'
 
     // https://mvnrepository.com/artifact/io.springfox/springfox-swagger2
     compile group: 'io.springfox', name: 'springfox-swagger2', version: '2.9.2'
 
     // https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui
     compile group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.9.2'
-
 
 }
 

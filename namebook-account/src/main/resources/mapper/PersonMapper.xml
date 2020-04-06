@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="li.jesse.namebookaccount.dao.PersonDao">
+
+    <resultMap id="BaseResultMap"       type="li.jesse.namebookaccount.pojo.Person">
+        <id column="person_id"         jdbcType="CHAR" />
+        <result column="password"       jdbcType="VARCHAR" />
+        <result column="gender"         jdbcType="CHAR" />
+        <result column="date_of_birth"  jdbcType="TIMESTAMP" />
+        <result column="intl_tel_code"  jdbcType="CHAR" />
+        <result column="primary_mobile" jdbcType="CHAR" />
+        <result column="primary_email"  jdbcType="VARCHAR" />
+        <result column="create_time"    jdbcType="TIMESTAMP" />
+        <result column="update_time"    jdbcType="TIMESTAMP" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        person_id, password, gender, date_of_birth, intl_tel_code, primary_mobile, primary_email, create_time, update_time
+    </sql>
+
+    <!-- CRUD -->
+    <!-- select -->
+    <select id="selectByPersonId" resultMap="BaseResultMap" parameterType="java.lang.String">
+        select
+            <include refid="Base_Column_List" />
+        from
+            person
+        left join
+            person_name
+        on
+            person_name.person_id
+        where
+            person.person_id = #{personId, jdbcType=CHAR}
+        and
+            person_name.
+    </select>
+
+    <!-- insert -->
+    <insert id="insertAccount" parameterType="li.jesse.namebookaccount.pojo.Person">
+        insert into
+            account (account_id, password, given_name, middle_name, surname, gender, date_of_birth, intl_tel_code, primary_mobile, primary_email, description, create_time, update_time)
+        values (
+            #{account_id, jdbcType=CHAR}, #{password, jdbcType=VARCHAR}, #{given_name, jdbcType=VARCHAR}, #{middle_name,jdbcType=VARCHAR}, #{surname, jdbcType=VARCHAR},
+            #{gender, jdbcType=CHAR}, #{date_of_birth, jdbcType=TIMESTAMP},
+            #{intl_tel_code, jdbcType=CHAR}, #{primary_mobile, jdbcType=CHAR}, #{primary_email, jdbcType=VARCHAR}, #{description, jdbcType=VARCHAR},
+            now(), now())
+    </insert>
+
+
+
+</mapper>

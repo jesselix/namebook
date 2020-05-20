@@ -1,10 +1,7 @@
 package li.jesse.namebookaccount.pojo;
 
-import lombok.Data;
-
 import java.util.Date;
 
-@Data
 public class PersonName {
 
     private String personNameId;
@@ -22,4 +19,79 @@ public class PersonName {
     private Date createTime;
 
     private Date updateTime;
+
+    public PersonName(String personNameId, String personId, String languageCode, String givenName, String middleName, String surname, Date createTime, Date updateTime) {
+        this.personNameId = personNameId;
+        this.personId = personId;
+        this.languageCode = languageCode;
+        this.givenName = givenName;
+        this.middleName = middleName;
+        this.surname = surname;
+        this.createTime = createTime;
+        this.updateTime = updateTime;
+    }
+
+    public String getPersonNameId() {
+        return personNameId;
+    }
+
+    public void setPersonNameId(String personNameId) {
+        this.personNameId = personNameId;
+    }
+
+    public String getPersonId() {
+        return personId;
+    }
+
+    public void setPersonId(String personId) {
+        this.personId = personId;
+    }
+
+    public String getLanguageCode() {
+        return languageCode;
+    }
+
+    public void setLanguageCode(String languageCode) {
+        this.languageCode = languageCode;
+    }
+
+    public String getGivenName() {
+        return givenName;
+    }
+
+    public void setGivenName(String givenName) {
+        this.givenName = givenName;
+    }
+
+    public String getMiddleName() {
+        return middleName;
+    }
+
+    public void setMiddleName(String middleName) {
+        this.middleName = middleName;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
+    }
+
+    public Date getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
+    }
+
+    public Date getUpdateTime() {
+        return updateTime;
+    }
+
+    public void setUpdateTime(Date updateTime) {
+        this.updateTime = updateTime;
+    }
 }

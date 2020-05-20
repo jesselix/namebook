@@ -13,12 +13,19 @@ public class PersonServiceImpl implements PersonService {
     private PersonDao personDao;
 
     @Override
-    public Person getPersonByPersonId(String personId, String languageCode) {
-        Person person = personDao.selectByPersonId(personId, languageCode);
-        if (person == null) {
-
-        }
+    public Person getPersonByPersonId(String personId) {
+        Person person = personDao.selectByPersonId(personId);
 
         return person;
     }
+
+//    @Override
+//    public Person getPersonByPersonId(String personId, String languageCode) {
+//        Person person = personDao.selectByPersonId(personId, languageCode);
+//        if (person == null) {
+//
+//        }
+//
+//        return person;
+//    }
 }

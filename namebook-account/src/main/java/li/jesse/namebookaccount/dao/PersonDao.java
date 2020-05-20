@@ -8,7 +8,7 @@ public interface PersonDao {
 
     Person selectByPersonId(String personId);
 
-    Person selectByPersonId(String personId, String languageCode);
+//    Person selectByPersonId(String personId, String languageCode);
 
-    int insertAccount(Person person);
+    int insertPerson(Person person);
 }

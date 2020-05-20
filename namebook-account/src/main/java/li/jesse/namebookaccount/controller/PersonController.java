@@ -17,21 +17,27 @@ import javax.servlet.http.HttpSession;
 @RequestMapping("/person/")
 public class PersonController {
 
-    private static final Logger log = LoggerFactory.getLogger(PersonController.class);
+    private static final Logger logger = LoggerFactory.getLogger(PersonController.class);
 
     @Autowired
     private PersonService personService;
 
-    @GetMapping(value = "get_account")
+    @GetMapping(value = "get_person")
     @ResponseBody
-    public Person getAccount(HttpSession session) {
+    public Person getPerson(HttpSession session) {
         Person currentAccount = (Person)session.getAttribute("currentAccount");
 
         if (currentAccount == null) {
 
         }
 
-        return personService.getPersonByPersonId(currentAccount.getPersonId(), "");
+        logger.info("ddd");
+
+        return personService.getPersonByPersonId("person_id_0001");
+
+//        return personService.getPersonByPersonId(currentAccount.getPersonId());
+
+//        return personService.getPersonByPersonId(currentAccount.getPersonId(), "");
     }
 
     @PostMapping(value = "register")

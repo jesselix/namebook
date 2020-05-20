@@ -1,10 +1,15 @@
 mybatis:
   configuration:
     map-underscore-to-camel-case: on
+  mapper-locations: classpath:mapper/*.xml
+
 spring:
+  application:
+    name: namebook-account
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mariadb://192.168.31.102:3306/serverTimezone=Shanghai&useUnicode=true&characterEncoding=utf8&useSSL=false
+    url: jdbc:mariadb://192.168.31.102:3306/namebook_account?serverTimezone=Shanghai&useUnicode=true&characterEncoding=utf8&useSSL=false
+    type: com.zaxxer.hikari.HikariDataSource
     username: dev
     password: dev123
     hikari:
@@ -17,5 +22,5 @@ spring:
       connection-timeout: 30000
       connection-test-query: SELECT 1
 
-
-
+server:
+  port: 8080

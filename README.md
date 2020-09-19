@@ -15,18 +15,15 @@ People Relationship Management Tool
 
 ## Backend Services
 Language: Java  
-Recommended IDE: IntelliJ IDEA
 
 ## Web Frontend
-Lanuage: HTML, CSS, JavaScript
+Lanuage: HTML, CSS, JavaScript  
 
 ## iOS App
 Language: Objective-C  
-Recommended IDE: Xcode
 
 ## Android App
 Language: Kotlin  
-Recommended IDE: Android Studio
 
 ## Databases
 PostgreSQL  

@@ -13,7 +13,7 @@ public class PersonServiceImpl implements PersonService {
     private PersonDao personDao;
 
     @Override
-    public Person getPersonByPersonId(String personId) {
+    public Person getPersonByPersonId(Long personId) {
         Person person = personDao.selectByPersonId(personId);
 
         return person;

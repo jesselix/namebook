@@ -6,7 +6,7 @@ import org.apache.ibatis.annotations.Mapper;
 @Mapper
 public interface PersonDao {
 
-    Person selectByPersonId(String personId);
+    Person selectByPersonId(Long personId);
 
 //    Person selectByPersonId(String personId, String languageCode);
 

@@ -4,29 +4,29 @@ import java.util.Date;
 
 public class Person {
 
-    private String personId;
+    private Long personId;
 
     private String password;
 
-    private String gender;
+    private String genderCode;
 
     private Date dateOfBirth;
 
     private String intlTelCode;
 
-    private String primaryMobile;
+    private String loginMobile;
 
-    private String primaryEmail;
+    private String loginEmail;
 
     private Date createTime;
 
     private Date updateTime;
 
-    public String getPersonId() {
+    public Long getPersonId() {
         return personId;
     }
 
-    public void setPersonId(String personId) {
+    public void setPersonId(Long personId) {
         this.personId = personId;
     }
 
@@ -38,12 +38,12 @@ public class Person {
         this.password = password;
     }
 
-    public String getGender() {
-        return gender;
+    public String getGenderCode() {
+        return genderCode;
     }
 
-    public void setGender(String gender) {
-        this.gender = gender;
+    public void setGenderCode(String genderCode) {
+        this.genderCode = genderCode;
     }
 
     public Date getDateOfBirth() {
@@ -62,20 +62,20 @@ public class Person {
         this.intlTelCode = intlTelCode;
     }
 
-    public String getPrimaryMobile() {
-        return primaryMobile;
+    public String getLoginMobile() {
+        return loginMobile;
     }
 
-    public void setPrimaryMobile(String primaryMobile) {
-        this.primaryMobile = primaryMobile;
+    public void setLoginMobile(String loginMobile) {
+        this.loginMobile = loginMobile;
     }
 
-    public String getPrimaryEmail() {
-        return primaryEmail;
+    public String getLoginEmail() {
+        return loginEmail;
     }
 
-    public void setPrimaryEmail(String primaryEmail) {
-        this.primaryEmail = primaryEmail;
+    public void setLoginEmail(String loginEmail) {
+        this.loginEmail = loginEmail;
     }
 
     public Date getCreateTime() {

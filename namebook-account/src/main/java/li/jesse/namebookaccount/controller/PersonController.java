@@ -25,16 +25,17 @@ public class PersonController {
     @GetMapping(value = "get_person")
     @ResponseBody
     public Person getPerson(HttpSession session) {
-        Person currentAccount = (Person)session.getAttribute("currentAccount");
-
-        if (currentAccount == null) {
-
-        }
+//        Person currentAccount = (Person)session.getAttribute("currentAccount");
+//
+//        if (currentAccount == null) {
+//
+//        }
 
         logger.info("ddd");
-
-        return personService.getPersonByPersonId("person_id_0001");
-
+        Person p = new Person();
+        p = personService.getPersonByPersonId(1L);
+        logger.info(p.getLoginEmail());
+        return personService.getPersonByPersonId(1L);
 //        return personService.getPersonByPersonId(currentAccount.getPersonId());
 
 //        return personService.getPersonByPersonId(currentAccount.getPersonId(), "");

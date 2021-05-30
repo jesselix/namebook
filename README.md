@@ -11,13 +11,15 @@ People Relationship Management Tool
 | namebook-ios | iOS App |
 | namebook-android | Android App |
 
-# Development Environment
+# Development Environments
 
 ## Backend Services
 Language: Java  
+IDE: IntelliJ Idea  
 
 ## Web Frontend
 Lanuage: HTML, CSS, JavaScript  
+Framework: Vue  
 
 ## iOS App
 Language: Objective-C  

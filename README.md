@@ -10,6 +10,7 @@ People Relationship Management Tool
 | namebook-web | Web Frontend |
 | namebook-ios | iOS App |
 | namebook-android | Android App |
+|  |  |  
 
 # Development Environments
 
@@ -17,7 +18,7 @@ People Relationship Management Tool
 Language: Java  
 IDE: IntelliJ Idea  
 
-## Web Frontend
+## Web
 Lanuage: HTML, CSS, JavaScript  
 Framework: Vue  
 

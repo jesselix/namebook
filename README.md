@@ -4,10 +4,8 @@ People Relationship Management Tool
 # Projects
 | Project | Description | 
 | --- | --- | 
-| namebook-common | Common Libraries for Backend Services |
-| namebook-account | Account Backend Services |
-| namebook-keeper | Book keeping Beckend Services |
-| namebook-web | Web Frontend |
+| namebook | Backend Services |
+| namebook-web | Web |
 | namebook-ios | iOS App |
 | namebook-android | Android App |
 |  |  |  

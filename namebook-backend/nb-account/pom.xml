@@ -7,9 +7,7 @@
         <groupId>li.jesse</groupId>
         <artifactId>namebook-backend</artifactId>
         <version>0.0.1</version>
-<!--        <relativePath>../pom.xml</relativePath>-->
     </parent>
-
 
     <groupId>li.jesse</groupId>
     <artifactId>nb-account</artifactId>
@@ -24,12 +22,6 @@
     </dependencies>
 
     <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
     </build>
 
 </project>

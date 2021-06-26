@@ -6,6 +6,7 @@ People Relationship Management Tool
 | --- | --- | 
 | namebook | Backend Services |
 | namebook-web | Web |
+| namebook-admin-web | Web for Admin |
 | namebook-ios | iOS App |
 | namebook-android | Android App |
 |  |  |  
@@ -18,13 +19,15 @@ IDE: IntelliJ Idea
 
 ## Web
 Lanuage: HTML, CSS, JavaScript  
-Framework: Vue  
+IDE: WebStorm  
 
 ## iOS App
 Language: Objective-C  
+IDE: Xcode
 
 ## Android App
 Language: Kotlin  
+IDE: Android Studio
 
 ## Databases
 PostgreSQL  

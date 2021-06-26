@@ -9,10 +9,8 @@ People Relationship Management Tool
 | namebook-admin-web | Web for Admin |
 | namebook-ios | iOS App |
 | namebook-android | Android App |
-|  |  |  
 
 # Development Environments
-
 ## Backend Services
 Language: Java  
 IDE: IntelliJ Idea  
